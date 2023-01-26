@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb936250.css",
-    "main.js": "/static/js/main.3b7e1104.js",
+    "main.css": "/static/css/main.337b4a26.css",
+    "main.js": "/static/js/main.d2f5cf32.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/avatar.jpg": "/static/media/avatar.d67688f75fe620351cd0.jpg",
     "static/media/myntra.png": "/static/media/myntra.928aa649f442cb41d9d3.png",
     "static/media/reliance.png": "/static/media/reliance.29718f6b9b62677cc8c7.png",
     "static/media/empathy.png": "/static/media/empathy.2a30eaade9dd96e90fbe.png",
     "static/media/team_collaboration.png": "/static/media/team_collaboration.3e84adc0c16be97f4e9e.png",
+    "static/media/Debabrata_Datta_Resume.pdf": "/static/media/Debabrata_Datta_Resume.41a05456a1d000160e5c.pdf",
     "static/media/netmeds.png": "/static/media/netmeds.1bf0b12ccdd149000000.png",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/wrike.png": "/static/media/wrike.e108a8be6e4d4512dc28.png",
@@ -23,12 +24,12 @@
     "static/media/styled-components.png": "/static/media/styled-components.88993be2d81156d6d732.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.eb936250.css.map": "/static/css/main.eb936250.css.map",
-    "main.3b7e1104.js.map": "/static/js/main.3b7e1104.js.map",
+    "main.337b4a26.css.map": "/static/css/main.337b4a26.css.map",
+    "main.d2f5cf32.js.map": "/static/js/main.d2f5cf32.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb936250.css",
-    "static/js/main.3b7e1104.js"
+    "static/css/main.337b4a26.css",
+    "static/js/main.d2f5cf32.js"
   ]
 }
