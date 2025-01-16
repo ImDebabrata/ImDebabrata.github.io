@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+$animation-color1: #1d3557;
+$animation-color2: black;
+$section-background1: #1d3557;
+$section-background2: black;
+$heading-background1: black;
+$heading-background2: #0a3442;
+
+@mixin background-color-animation($first, $second) {
+  background: linear-gradient(to right, $first, $second);
+  background-size: 200% 100%;
+  animation: gradientAnim 5s ease-in-out infinite;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  animation: #{$str};
+}
+
+@include keyframes(rotate) {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@include keyframes(top_to_bottom) {
+  from {
+    transform: translateY(-100%);
+  }
+}
+
+@include keyframes(gradientAnim) {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: 675px) {
+    @content;
+  }
+}
+@mixin media-md {
+  @media screen and (max-width: 570px) {
+    @content;
+  }
+}
+@mixin media-sm {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

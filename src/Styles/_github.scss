@@ -1,0 +1,24 @@
+#github_section {
+  // margin: 30px 0;
+  overflow: hidden;
+  & > div {
+    color: white;
+    background-color: #1d3557;
+    // @include background-color-animation(
+    //   $section-background1,
+    //   $section-background2
+    // );
+
+    padding: 20px;
+  }
+}
+.stats_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+  > img {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+}

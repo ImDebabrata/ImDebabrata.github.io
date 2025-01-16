@@ -1,0 +1,101 @@
+#project_container {
+  display: grid;
+  color: white;
+  background-color: #1d3557;
+  // @include background-color-animation(
+  //   $section-background1,
+  //   $section-background2
+  // );
+
+  padding: 3%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vw;
+  // width: 97%;
+  // margin: 20px auto;
+  overflow: hidden;
+
+  & > div {
+    background-color: #023047;
+    border-radius: 1vw;
+    overflow: hidden;
+    &:hover {
+      .project_more_info {
+        bottom: 0;
+        animation: bottom_to_center 100ms linear;
+      }
+    }
+  }
+
+  //Responsive
+  @include media-lg {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#project_container > div > div,
+.project_more_info {
+  padding: 2vw;
+}
+
+.project_template {
+  text-align: left;
+}
+.project_basic_info {
+  position: relative;
+  overflow: hidden;
+  & > h4 {
+    font-size: 26px;
+    margin: 10px auto;
+  }
+}
+
+.project_cover_image {
+  width: 100%;
+  border-radius: 1vw;
+}
+.tech_stack {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 5px;
+  & > div {
+    background-color: white;
+    border-radius: 2px;
+    height: 30px;
+    & > img {
+      width: 30px;
+    }
+  }
+}
+.project_more_info {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #1a1a2e;
+  bottom: -100%;
+  transition: 1.5s;
+  left: 0;
+}
+.project_source_buttons {
+  width: fit-content;
+  & > div > a > button {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+.project_pages_box {
+  background-color: #5e95e8;
+  border-radius: 4px;
+  padding: 3px;
+  margin: 2px;
+  display: inline-block;
+}

@@ -1,0 +1,67 @@
+@import "config";
+@import "navbar";
+@import "about";
+@import "skills";
+@import "projects";
+@import "github";
+@import "contact";
+
+.App {
+  text-align: center;
+  /* background-color: rgba(36, 140, 232, 0.9); */
+  color: #ffffff;
+  // background-color: #011627;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 2;
+  margin: 10px auto;
+}
+
+.section_heading {
+  // margin: 40px;
+  // border: 1px solid black;
+  background-color: #0a2647;
+  color: white;
+  // @include background-color-animation(
+  //   $heading-background1,
+  //   $heading-background2
+  // );
+
+  padding: 40px;
+}
+
+.resume_buttons > a {
+  display: inline-block;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1;
+  margin: 5px;
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  /* font-weight: bold; */
+}
+.resume_buttons > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 100%;
+  z-index: -1;
+  transition: all 200ms ease-in-out;
+}
+.resume_buttons > a:hover::before {
+  width: 100%;
+  background-color: #00a8e1;
+}
